@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="dark:bg-slate-900">
+    <header class="relative">
+        <div class="container">
+            <nav class="flex justify-between items-center pt-[26px]">
+                <a href="#">ОБИТЕЛЬ</a>
+
+                <ul class="flex gap-12 md:hidden">
+                    <li><a href="#"
+                            class="dark:text-white font-medium text-xl text-lightblack hover:text-darkred transition-colors lg:text-base">О
+                            нас</a></li>
+                    <li><a href="#"
+                            class="dark:text-white font-medium text-xl text-lightblack hover:text-darkred transition-colors lg:text-base">Квесты</a>
+                    </li>
+                    <li><a href="#"
+                            class="dark:text-white font-medium text-xl text-lightblack hover:text-darkred transition-colors lg:text-base">Отзывы</a>
+                    </li>
+                    <li><a href="#"
+                            class="dark:text-white font-medium text-xl text-lightblack hover:text-darkred transition-colors lg:text-base">Актерам</a>
+                    </li>
+                    <li><a href="#"
+                            class="dark:text-white font-medium text-xl text-lightblack hover:text-darkred transition-colors lg:text-base">Блог</a>
+                    </li>
+                </ul>
+
+                <ul id="menu" class="hidden absolute left-6  right-6 top-24 bg-lightred flex-col items-center">
+                    <li><a href="#" class="block py-4 text-white">О нас</a></li>
+                    <li><a href="#" class="block py-4 text-white">Квесты</a></li>
+                    <li><a href="#" class="block py-4 text-white">Отзывы</a></li>
+                    <li><a href="#" class="block py-4 text-white">Актерам</a></li>
+                    <li><a href="#" class="block py-4 text-white">Блог</a></li>
+                </ul>
+
+                <button class="burger hidden md:block">
+                    <span class="burger-line top-line dark:bg-white"></span>
+                    <span class="burger-line mid-line dark:bg-white"></span>
+                    <span class="burger-line bottom-line dark:bg-white"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h1
+                    class="dark:text-white pt-24 font-black text-5xl max-w-2xl text-center mx-auto leading-snug lg:text-4xl lg:pt-16 md:text-3xl md:pt-12 md:max-w-full sm:pt-10 sm:text-2xl">
+                    Погрузись в атмосферу чистого ужаса.</h1>
+
+                <p
+                    class="dark:text-gray-500 text-xl tracking-tight text-center max-w-xl mx-auto mt-[18px] md:text-lg md:mt-4 sm:mt-2 sm:text-base">
+                    Реалистичные хоррор-квесты с профессиональными актерами. Выберите сценарий, соберите команду и
+                    попробуйте выбраться.</p>
+
+                <div class="flex justify-center gap-7 sm:flex-col sm:gap-0 sm:mt-4">
+                    <a href="#" class="btn sm:text-center sm:mt-4 sm:text-base">Квесты</a>
+                    <a href="#"
+                        class="dark:text-white inline-block mt-6 py-[10px] px-8 rounded-2xl text-lightred text-xl tracking-tight border-2 border-lightred sm:text-center sm:mt-4 sm:text-base">Узнать
+                        больше</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <div class="flex justify-between mt-40 pb-32 lg:flex-col lg:mt-32 lg:pb-24">
+                    <div class="flex flex-col w-1/2 lg:w-full">
+                        <div class="text-darkred font-bold text-xl tracking-tight">О нас</div>
+                        <h2 class="dark:text-white mt-[2px] text-4xl font-black lg:text-3xl sm:text-2xl">Создатели
+                            игрового пространства.</h2>
+                        <p class="dark:text-gray-500 mt-[10px] max-w-sm text-lg lg:max-w-full sm:text-base">«Обитель» —
+                            это больше, чем просто комната с загадками. Мы объединили реалистичные декорации, объемный
+                            звук и игру
+                            актеров, чтобы вы полностью поверили в происходящее. Сценарий подстраивается под действия
+                            вашей команды, а за
+                            безопасность отвечают опытные операторы.</p>
+                        <a href="#" class="btn">Подробнее</a>
+                    </div>
+                    <div class="flex flex-col w-[450px] lg:w-full lg:mt-6">
+                        <img src="./img/about.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-darkgray py-20 md:py-10">
+        <div class="container">
+            <div class="flex gap-40 md:flex-col md:gap-10">
+                <div class="max-w-xs md:max-w-full">
+                    <a href="#"><img src="" alt=""> ОБИТЕЛЬ</a>
+                    <p class="mt-[18px] text-white text-xl">Зарегестрируйтесь, чтобы получить скидку 15% на первую игру
+                    </p>
+                    <input type="text" placeholder="Email"
+                        class="mt-3bg-[#454545] flex w-full py-3 px-4 rounded-xl border-[1px] border-[#595959] text-white focus:outline-none focus:border-lightred placeholder:italid">
+                    <button class="btn">Зарегистрироваться</button>
+                </div>
+                <div>
+                    <div class="text-lightred text-xl font-medium">Перейти</div>
+                    <ul class="mt-2">
+                        <li class="mt-3 text-white"><a href="#" class="text-xl font-medium"></a>О нас</li>
+                        <li class="mt-3 text-white"><a href="#" class="text-xl font-medium"></a>Контакты</li>
+                        <li class="mt-3 text-white"><a href="#" class="text-xl font-medium"></a>Квесты</li>
+                        <li class="mt-3 text-white"><a href="#" class="text-xl font-medium"></a>Отзывы</li>
+                        <li class="mt-3 text-white"><a href="#" class="text-xl font-medium"></a>Актерам</li>
+                        <li class="mt-3 text-white"><a href="#" class="text-xl font-medium"></a>Блог</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="mode" class="btn fixed right-2 bottom-2 text-sm">Тема</button>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
